@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: white;
+        }
+        .container{
+            display: flex;
+            background: papayawhip;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            flex-direction: column;
+        }
+        .item{
+            width: 30px;
+            height: 30px;
+            background: purple;
+        }
+        .container .item:nth-child(2n + 1){
+            background: cyan;
+        }
+        a{
+            color: rgb(20, 42, 114);
+        }
+        a:visited {
+        color: rgb(12, 12, 52);
+        }
+        a:hover {
+        color: rgb(114, 30, 130);
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">la guia completa de Flexbox, uy uy que completa que esta :D</a>
+    </div>
+</body>
+</html>
+
+
+<!-- Qué es flexbox
+Flexbox consiste en el ordenamiento de elementos hijos en un solo eje, por defecto horizontalmente. 
+El elemento padre o contenedor deberá contener la propiedad display con el valor flex. A partir de aquí, ya puedes 
+ordenar los hijos según sea necesario. -->

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: blueviolet;
+        }
+        p::first-letter{
+            color: black;
+        }
+        p::before{
+            content: "😳";
+        }
+        p::after{
+            content: "😳";
+        }
+        p:hover{
+            color: skyblue;
+        }
+        div p:nth-child(2){
+            color: darkblue;
+        }
+        ::placeholder{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>HOLIII</p>
+    <div>
+        <p>platzi</p>
+        <p>master</p>
+        <p>lo mejor</p>
+    </div>
+    <input type="text" placeholder="hoala miqos">
+</body>
+</html>
+
+<!--
+Existen otros tipos de selectores, además de los selectores básicos y combinadores, capaces de cambiar un estado o 
+añadir algo más al elemento. Estos son denominados pseudoclases y pseudoelementos.
+
+Cuáles son las pseudoclases
+Una pseudoclase define el estilo de un estado especial de un elemento.
+
+Sintaxis
+selector : pseudoclase { 
+    propiedad: valor;
+}
+
+
+
+Cuáles son los pseudoselementos
+Un pseudoelemento define el estilo de una parte específica de un elemento.
+
+Sintaxis
+selector :: pseudo-elemento { 
+    propiedad: valor;
+}
+
+-->

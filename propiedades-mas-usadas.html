@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .card{
+            width: 500px;
+            height: 500px;
+            background-image:linear-gradient(#1c1c1c,#bfc1c1);
+            border-radius: 40px;
+            overflow: hidden;
+        }
+        .card .cinta:nth-child(1){
+            width: 310px;
+            height: 100px;
+            background: blue;
+            border: 30px;
+            position: relative;
+            z-index: 2;
+            top: 39.1px;
+            right: 40px;
+            border-radius: 30px;
+        }
+        .card img:nth-child(2){
+            width: 100px;
+            top: -12.1%;
+            left: 190px;
+            position: relative;
+            border-radius: 50%;
+            z-index: 3;
+        }
+        .card img:nth-child(3){
+            width: 400px;
+            bottom: 41%;
+            left: center;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+        .card p{
+            text-align: center;
+        }
+        .card p:nth-child(4){
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="cinta"></div>
+            <img src="https://scontent.fmex28-1.fna.fbcdn.net/v/t39.30808-6/289103907_3477978322429343_5474281010348317785_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEZzw2fDDH0NvHc32QyZgJ6CSD2z9Sg_SkJIPbP1KD9KVYcri3NLxh-uWOKp-79sekOqWv6AkX7gashcAZwQtwf&_nc_ohc=9qfqxFaT1N8AX_Ewfrs&tn=Bot3pM7y4lyFIwtA&_nc_ht=scontent.fmex28-1.fna&oh=00_AT-yPe36Gmv_oJnEnkro-xyrBMldytJI-AwOClAJhT_spA&oe=634B473D" alt="yo">
+            <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_15.jpg" alt="kayn">
+            <p>kayn</p>
+            <p>El segador de las sombras</p>
+        </div>
+    </section>
+</body>
+</html>
+
+<!-- documentacion de css
+https://cssreference.io/ -->

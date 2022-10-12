@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>+
+    <!-- El posicionamiento en CSS consiste en cómo un elemento se situará, con respecto a su elemento padre y al flujo normal del documento. 
+    El flujo normal del documento es el orden de los elementos establecidos en el HTML. -->
+
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background: black;
+            position: relative;
+            /* Posición relative
+            La posición relative consiste en respetar el flujo normal del documento donde las propiedades de posición 
+            sí pueden ser establecidas. */
+            top: 20px;
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            background: rgb(51, 202, 76);
+            position: absolute;
+            /* Posición absolute 
+            consiste en quitar al elemento del flujo normal del documento donde las propiedades de posición sí pueden ser establecidas. */
+            /* El elemento con posición absoluta se desplazará arriba, abajo, izquierda o derecha con respecto al elemento padre más próximo con 
+            posición relativa.
+            Si no existe un padre con posición relativa de un elemento con posición absoluta, este se desplazará con respecto al elemento raíz 
+            del documento. */
+            right: 0;
+        }
+        nav{
+            width: 100%;
+            height: 60px;
+            background: gold;
+            /* La posición fixed consiste en quitar al elemento del flujo normal del documento y fijarlo en un lugar; donde las propiedades de 
+            posición sí pueden ser establecidas. */
+            position: fixed;
+            top: 0;
+        }
+        ul p{
+            /* La posición sticky consiste en quitar al elemento del flujo normal del documento y fijarlo en un lugar mientras su contenedor 
+            sea visible; donde las propiedades de posición sí pueden ser establecidas. */
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <div class="container">
+        <div class="item"></div>
+    </div>
+   
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsa minima cupiditate, totam, 
+        deserunt adipisci consectetur eaque id laborum molestiae fugiat! Minus ut libero iure iste deserunt 
+        vitae praesentium quasi!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam blanditiis perferendis, magni tempore 
+    voluptatem natus cumque neque possimus ullam incidunt adipisci ipsa corporis eligendi nobis ipsam 
+    reprehenderit animi sapiente autem!</p>
+   <ul>
+    <p>frutas</p>
+    <li>manzana</li>
+    <li>sandia</li>
+    <li>pera</li>
+   </ul>
+   <ul>
+    <p>frutas</p>
+    <li>manzana</li>
+    <li>sandia</li>
+    <li>pera</li>
+   </ul>
+   <ul>
+    <p>frutas</p>
+    <li>manzana</li>
+    <li>sandia</li>
+    <li>pera</li>
+   </ul>
+   <ul>
+    <p>frutas</p>
+    <li>manzana</li>
+    <li>sandia</li>
+    <li>pera</li>
+   </ul>
+   <ul>
+    <p>frutas</p>
+    <li>manzana</li>
+    <li>sandia</li>
+    <li>pera</li>
+   </ul>
+   <ul>
+    <p>frutas</p>
+    <li>manzana</li>
+    <li>sandia</li>
+    <li>pera</li>
+   </ul>
+</body>
+</html>
